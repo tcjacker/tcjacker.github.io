@@ -1,2 +1,3 @@
-# relayforge-releases
-RelayForge for Mac downloads
+# RelayForge website
+
+Generated static site. Source app: https://github.com/tcjacker/relayforge

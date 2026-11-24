@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RelayForge · Keep your project going — a workbench for continuous development with AI</title>
+<meta name="description" content="A demo with Claude Code or Codex is quick; keeping a project going is hard. RelayForge is built for continuous development and plugs into the Claude Code and Codex you already use — no new AI subscription: a branch per requirement that merges only after you accept it, a test suite that grows and reruns in one click after each change, and progress, decisions and the product map you can always look up.">
+<link rel="icon" href="/static/logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="zh-CN" href="https://tcjacker.github.io/">
+<link rel="alternate" hreflang="en" href="https://tcjacker.github.io/en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/static/site.css">
+<script src="/static/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="/en/">
+      <span class="brand-mark"><svg width="22" height="22" viewBox="15 25 70 50" aria-hidden="true"><polygon points="50,30 80,30 71,41 42,41" fill="#fff"/><polygon points="38,44 80,44 71,55 30,55" fill="#fff"/><polygon points="27,59 81,59 72,70 19,70" fill="#fff"/></svg></span>
+      <span class="brand-name">RelayForge</span>
+      
+    </a>
+    <div class="nav-links">
+      <a href="/en/#features">Features</a>
+      <a href="/en/#flow">How it works</a>
+      <a href="/en/download" >Download</a>
+      
+      <a href="https://github.com/tcjacker/relayforge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/></svg>GitHub</a>
+      <a class="lang" href="/" hreflang="zh-CN" aria-label="切换到中文"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>中 / <b>EN</b></a>
+      <a class="nav-cta" href="/en/download">Download for Mac</a>
+    </div>
+  </nav>
+</header>
+<main id="main">
+
+<section class="wrap hero">
+  <p class="pill">macOS desktop app · plugs into Claude Code and Codex · no new AI subscription</p>
+  <h1><span>AI gets you a demo fast.</span><span>RelayForge keeps your project going.</span></h1>
+  <p class="lead">More requirements, more sessions, and every new change risks breaking an old one. RelayForge turns AI development into continuous integration: a branch per requirement that merges only after you accept it, a test suite that keeps growing and reruns in one click after each change, a record of progress and decisions, and a product map that always matches main.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/en/download"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download RelayForge.dmg</a>
+    <a class="btn btn-ghost" href="https://github.com/tcjacker/relayforge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/></svg>View source on GitHub</a>
+  </div>
+  <p class="meta">v0.1.0 · Requires macOS and Claude Code or Codex</p>
+</section>
+
+<section class="wrap preview">
+  <figure class="promo">
+    <video muted loop playsinline preload="metadata" data-autoplay
+           poster="/static/video/relayforge-promo-poster.jpg" aria-label="RelayForge promo: building by chatting with AI, you lose track of last week, re-explain the project, fix one bug and break two features, and watch it touch dozens of files — so you stop trusting it. RelayForge keeps AI development on track: pick up where you left off, let AI make bold changes because nothing reaches main without your OK, make the calls while AI finds and fixes bugs and sets up the test environment, and watch the project get clearer over time. Works with your Claude Code or Codex — no new AI subscription">
+      <source src="/static/video/relayforge-promo.mp4" type="video/mp4">
+    </video>
+    <figcaption class="caption">App screens from the FlowNote demo project that ships with the app; all sample data is fictional. Terminal and change-count shots are illustrations</figcaption>
+  </figure>
+</section>
+
+<section id="why" class="wrap section section-after-preview">
+  <div class="section-head">
+    <p class="kicker">Demos are easy. Keeping going is hard.</p>
+    <h2 class="h2">Build long enough by chatting with AI, and this happens</h2>
+  </div>
+  <ol class="cards pains">
+    
+    <li class="card pain"><span class="pain-num">01</span><h3>Sessions pile up</h3><p>“Continue from yesterday”, “New chat”, “Keep going”… hundreds of sessions, and no telling which belongs to what.</p></li>
+    
+    <li class="card pain"><span class="pain-num">02</span><h3>History and decisions get lost</h3><p>Why something changed and who decided lives in some old chat — weeks later, you can&#39;t find it.</p></li>
+    
+    <li class="card pain"><span class="pain-num">03</span><h3>New changes break old features</h3><p>Every session focuses on the task at hand. Nobody checks whether what already worked still does.</p></li>
+    
+  </ol>
+</section>
+
+<section id="features" class="band">
+  <div class="wrap section">
+    <div class="section-head">
+      <p class="kicker">How RelayForge fixes it</p>
+      <h2 class="h2">Continuous integration for AI development</h2>
+    </div>
+    <div class="cards cards-3">
+      <div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="7" r="2"/><path d="M6 7v10"/><path d="M18 9c0 5-6 4-12 8"/></svg><h3>A branch per requirement</h3><p>Each new requirement gets its own branch, worktree and sessions. Sessions are filed under their requirement, stay alive when you switch, and never collide.</p></div>
+      <div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10"/><path d="M6 7c0 4 6 5 10 5"/><path d="m3.5 13.5 2.5 2.5 4-4"/></svg><h3>Only accepted work merges</h3><p>You check each item and click “Confirm done” — only then does the change merge. Every commit is tagged with its requirement and session, so you can always trace it back.</p></div>
+      <div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6 2 2 3-3"/><path d="m4 12 2 2 3-3"/><path d="m4 18 2 2 3-3"/><path d="M13 7h7"/><path d="M13 13h7"/><path d="M13 19h7"/></svg><h3>A test suite that grows and reruns</h3><p>AI writes test sets from your acceptance checks. They stay with the project, and one click reruns the whole suite after a change. When a feature is replaced, its tests are marked stale automatically.</p></div>
+      <div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="13" rx="5"/><path d="M9 7a3 3 0 0 1 6 0"/><path d="M3 13h4"/><path d="M17 13h4"/><path d="M4 8l3 2"/><path d="M20 8l-3 2"/><path d="M4 19l3-2"/><path d="M20 19l-3-2"/></svg><h3>Bugs flow back, get fixed, get retested</h3><p>Problems found in testing or use become an issue that AI triages first. Click “Start fix” and Claude Code or Codex fixes it on its own branch, then hands back a report for you to confirm.</p></div>
+      <div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01"/><path d="M7 16.5h.01"/><path d="m14 15 3 1.5-3 1.5z"/></svg><h3>AI sets up the test environment</h3><p>AI reads the project and proposes how to start it. Once you approve, launch services and watch logs inside the app — and turn anything wrong into an issue, logs included.</p></div>
+      <div class="card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4"/><path d="M17.5 10v4"/></svg><h3>Progress, decisions and the map, on record</h3><p>AI records its plan, progress and every change of direction. The product map holds only accepted work, so it always matches main.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="bring-your-ai" class="wrap">
+  <div class="byo">
+    <div class="byo-head">
+      <p class="kicker">Bring the AI you already use</p>
+      <h2 class="h2">Plugs into Claude Code and Codex — no new AI subscription</h2>
+      <p>RelayForge has no model of its own and needs no extra AI credits. It runs the Claude Code or Codex you&#39;ve already installed and signed in to, on your own account and plan.</p>
+      <div class="byo-tools" aria-hidden="true"><span>Claude Code</span><span>Codex</span></div>
+    </div>
+    <ul class="byo-points">
+      
+      <li><h3>Embedded as-is</h3><p>Each build session is the same CLI you know, embedded right next to the requirement.</p></li>
+      
+      <li><h3>Pick the tool and model per session</h3><p>Choose Claude Code or Codex as the default in Settings, and pick the tool and model again when you start a fix.</p></li>
+      
+      <li><h3>No new AI bill</h3><p>Background triage and summaries run through the same tool you chose — no other model service involved.</p></li>
+      
+    </ul>
+  </div>
+</section>
+
+<section id="flow" class="wrap section">
+  <div class="section-head">
+    <p class="kicker">Round after round</p>
+    <h2 class="h2">Every requirement goes through the same loop</h2>
+  </div>
+  <ol class="steps">
+    
+    <li><span class="num">01</span><h3>Scope</h3><p>AI talks but doesn&#39;t edit: one question at a time, it pins down the spec, the features it touches and the acceptance checks, with mockups when needed.</p></li>
+    
+    <li><span class="num">02</span><h3>Build and test</h3><p>Once you approve, AI writes the code on the requirement&#39;s own branch and logs progress. In the test stage, a test session writes and runs tests from your acceptance checks and sends problems back to development.</p></li>
+    
+    <li><span class="num">03</span><h3>Accept and merge</h3><p>Run the app inside RelayForge and try each item yourself. The change merges into main only when you confirm.</p></li>
+    
+    <li><span class="num">04</span><h3>Update the map, start the next round</h3><p>Accepted changes go into the product map. The next requirement starts from the latest main, with the old tests still on guard.</p></li>
+    
+  </ol>
+</section>
+
+<section class="band">
+  <div class="wrap two-col">
+    <div>
+      <h2 class="h2-sm">Before you start</h2>
+      <ul class="bullets">
+        <li>A Mac</li>
+        <li>Claude Code or Codex CLI, installed and signed in</li>
+        <li>Git, with your project as a repository that has at least one commit</li>
+      </ul>
+      <a href="/en/download#requirements">Full install guide →</a>
+    </div>
+    <div>
+      <h2 class="h2-sm">Your code stays on your Mac</h2>
+      <p class="body-text">RelayForge runs locally and model calls go through your own Claude Code or Codex account. Merges happen only in your local repository; nothing is pushed until you click Publish. It never reads secrets, .env files or Git-ignored files.</p>
+      <p class="body-text">It opens on the FlowNote demo project first; browsing the demo never calls a model.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="opensource" class="wrap">
+  <div class="os">
+    <div class="os-text">
+      <p class="kicker">Source available</p>
+      
+      <h2 class="h2">The code is on GitHub</h2>
+      <p>RelayForge&#39;s source is available under FSL-1.1-ALv2. Read the code, build it yourself, and send issues and pull requests.</p>
+      <div class="code">git clone https://github.com/tcjacker/relayforge.git</div>
+      
+    </div>
+    <div class="os-links">
+      <a href="https://github.com/tcjacker/relayforge">View source <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/tcjacker/relayforge/issues">Issues <span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/tcjacker/relayforge/blob/main/CONTRIBUTING.md">Contributing <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+
+<section class="wrap cta">
+  <h2 class="h2">Run one round on the project you&#39;re already building</h2>
+  <p>Pick a small real requirement and take it from scoping to merge.</p>
+  <a class="btn btn-primary" href="/en/download"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download RelayForge.dmg</a>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer">
+    <span>© 2026 RelayForge</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/tcjacker/relayforge">GitHub</a>
+      <a href="/en/download#changelog">Changelog</a>
+      
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
