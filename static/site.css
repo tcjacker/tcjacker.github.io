@@ -290,3 +290,28 @@ fieldset { margin: 0; padding: 0; border: 0; }
 .spam-text { font-size: 14px; }
 .spam-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .spam-actions .btn-sm { min-height: 36px; padding: 6px 12px; font-size: 14px; }
+/* 使用链路：每一步一张截图 */
+.walk { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 72px; }
+.walk-step { display: grid; gap: 28px; align-items: center; }
+.walk-text { display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
+.walk-text .num { font-family: var(--display); font-size: 14px; font-weight: 700; color: var(--accent); }
+.walk-text h3 { font-size: 24px; line-height: 1.35; }
+.walk-text p { font-size: 16px; line-height: 1.8; color: var(--muted); }
+.walk-shot { margin: 0; }
+.walk-shot a { display: block; border-radius: 14px; overflow: hidden; border: 1px solid #2A2C31; background: #111318;
+               box-shadow: 0 30px 60px -30px rgba(20,20,20,.45); }
+.walk-shot img { display: block; width: 100%; height: auto; }
+/* 宽图：文字在上，图占满整行 */
+.walk-wide { grid-template-columns: 1fr; }
+/* 竖图（右侧面板）：和文字并排，左右交替 */
+.walk-tall { grid-template-columns: minmax(0, 1fr) minmax(0, 320px); column-gap: 64px; }
+.walk-tall .walk-shot { justify-self: center; width: 100%; max-width: 320px; }
+.walk-tall:nth-child(3) .walk-text { order: 2; }
+.walk-tall:nth-child(3) { grid-template-columns: minmax(0, 320px) minmax(0, 1fr); }
+@media (max-width: 760px) {
+  .walk { gap: 56px; }
+  .walk-tall, .walk-tall:nth-child(3) { grid-template-columns: 1fr; }
+  .walk-tall:nth-child(3) .walk-text { order: 0; }
+  .walk-tall .walk-shot { max-width: 300px; }
+}
+.walk-note { margin-top: 40px; }

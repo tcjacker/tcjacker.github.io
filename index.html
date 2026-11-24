@@ -6,8 +6,8 @@
 <title>RelayForge · 让项目一直做下去：为 AI 持续开发而生的工作台</title>
 <meta name="description" content="用 Claude Code、Codex 做 demo 很快，把项目一直做下去才难。RelayForge 为持续开发而生，无缝接入你已经在用的 Claude Code 和 Codex，不用再订阅新的 AI 套餐：每个需求一条分支，验收通过才合进主线；测试越攒越多、改动后一键整套重跑；进度、决定和产品大图都有据可查。">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="zh-CN" href="https://tcjacker.github.io/">
-<link rel="alternate" hreflang="en" href="https://tcjacker.github.io/en">
+<link rel="alternate" hreflang="zh-CN" href="https://relayforge.club/">
+<link rel="alternate" hreflang="en" href="https://relayforge.club/en">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/static/site.css">
@@ -111,20 +111,99 @@
 
 <section id="flow" class="wrap section">
   <div class="section-head">
-    <p class="kicker">一圈一圈，持续迭代</p>
-    <h2 class="h2">每个需求都走完同一个闭环</h2>
+    <p class="kicker">使用链路</p>
+    <h2 class="h2">从打开项目到合进主线，一步一步看</h2>
   </div>
-  <ol class="steps">
+  
+  
+  <ol class="walk">
     
-    <li><span class="num">01</span><h3>立项</h3><p>AI 只聊不改：一次问一个问题，把需求说明、要改的功能点和验收条件写清楚，必要时出设计稿。</p></li>
     
-    <li><span class="num">02</span><h3>开发和测试</h3><p>你放行之后，AI 在需求自己的分支里写代码、记进展；进入测试阶段，测试会话按验收条件写测试、跑测试，有问题交回开发。</p></li>
+    <li class="walk-step walk-wide">
+      <div class="walk-text">
+        <span class="num">01</span>
+        <h3>打开你的项目，AI 先整理出产品大图</h3>
+        <p>在 RelayForge 里打开已有的 Git 仓库。AI 先读一遍代码，整理出产品大图的第一版：有哪些模块、每个模块下有哪些功能点。它整理的部分都标着「待确认」，等你过目。</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-map.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-map.jpg" width="1520" height="624" alt="产品大图：按层分页的模块和功能点，AI 整理的部分标着「待确认」" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
     
-    <li><span class="num">03</span><h3>验收和合并</h3><p>在软件里把程序跑起来，按清单亲手试一遍。你确认完成，改动才合进主线。</p></li>
     
-    <li><span class="num">04</span><h3>更新大图，开始下一轮</h3><p>验收过的变化写进产品大图。下一个需求从最新的主线开始，旧功能的测试继续守着。</p></li>
+    <li class="walk-step walk-tall">
+      <div class="walk-text">
+        <span class="num">02</span>
+        <h3>新建需求，先立项再动手</h3>
+        <p>一句话说想要什么。立项会话只聊不改代码，一次问一个问题，把需求说明、要改的功能点和验收条件写进需求里，必要时出设计稿。你确认立项以后才开工。</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-scope.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-scope.jpg" width="244" height="620" alt="立项中的需求：阶段、需求说明、要改的功能点和验收条件" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-tall">
+      <div class="walk-text">
+        <span class="num">03</span>
+        <h3>开发：每一步都看得见</h3>
+        <p>需求有自己的分支和工作目录，Claude Code 或 Codex 原样嵌在窗口里干活。旁边是它边做边记的计划、进度和方向调整，不用再翻聊天记录。</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-build.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-build.jpg" width="244" height="620" alt="进行中的需求：计划 2/4，每一步的完成状态" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-wide">
+      <div class="walk-text">
+        <span class="num">04</span>
+        <h3>测试：越攒越多，一键重跑</h3>
+        <p>进入测试阶段，测试会话按验收条件写测试集，AI 新加的数据都有标记，等你看一眼。测试集跟着项目一直攒着，改动后在测试页一键整套跑一遍。</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-tests.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-tests.jpg" width="1124" height="812" alt="测试集查看器：3 条全部通过，每条标着「AI 新加」" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-wide">
+      <div class="walk-text">
+        <span class="num">05</span>
+        <h3>问题回流：AI 修好，你来确认</h3>
+        <p>测试和使用中发现的问题记成一条，AI 先初判。点「开始修复」，选 Claude Code 或 Codex 在独立分支里修；交回前必须补一条能重现这个问题的回归测试并跑通，修复报告写清改了什么、怎么验证。</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-fix.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-fix.jpg" width="1128" height="688" alt="一条 AI 记下的问题：AI 初判、修复报告、回归数据和「确认修好了」" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-tall">
+      <div class="walk-text">
+        <span class="num">06</span>
+        <h3>验收、合并，大图跟着更新</h3>
+        <p>在软件里把程序跑起来，按验收条件逐条点「通过」或「这里不对」。你确认完成，改动才合进主线，产品大图随之更新，下一个需求从这里接着做。</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-accept.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-accept.jpg" width="244" height="620" alt="待验收的需求：逐条验收，已通过的条目带时间" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
     
   </ol>
+  <p class="caption walk-note">截图都来自 App 内置的 FlowNote 演示项目，示例数据为虚构。</p>
 </section>
 
 <section class="band">

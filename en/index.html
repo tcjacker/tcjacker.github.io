@@ -6,8 +6,8 @@
 <title>RelayForge · Keep your project going — a workbench for continuous development with AI</title>
 <meta name="description" content="A demo with Claude Code or Codex is quick; keeping a project going is hard. RelayForge is built for continuous development and plugs into the Claude Code and Codex you already use — no new AI subscription: a branch per requirement that merges only after you accept it, a test suite that grows and reruns in one click after each change, and progress, decisions and the product map you can always look up.">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
-<link rel="alternate" hreflang="zh-CN" href="https://tcjacker.github.io/">
-<link rel="alternate" hreflang="en" href="https://tcjacker.github.io/en">
+<link rel="alternate" hreflang="zh-CN" href="https://relayforge.club/">
+<link rel="alternate" hreflang="en" href="https://relayforge.club/en">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/static/site.css">
@@ -111,20 +111,99 @@
 
 <section id="flow" class="wrap section">
   <div class="section-head">
-    <p class="kicker">Round after round</p>
-    <h2 class="h2">Every requirement goes through the same loop</h2>
+    <p class="kicker">How it works</p>
+    <h2 class="h2">From opening a project to merging into main, step by step</h2>
   </div>
-  <ol class="steps">
+  
+  
+  <ol class="walk">
     
-    <li><span class="num">01</span><h3>Scope</h3><p>AI talks but doesn&#39;t edit: one question at a time, it pins down the spec, the features it touches and the acceptance checks, with mockups when needed.</p></li>
     
-    <li><span class="num">02</span><h3>Build and test</h3><p>Once you approve, AI writes the code on the requirement&#39;s own branch and logs progress. In the test stage, a test session writes and runs tests from your acceptance checks and sends problems back to development.</p></li>
+    <li class="walk-step walk-wide">
+      <div class="walk-text">
+        <span class="num">01</span>
+        <h3>Open your project — AI drafts the product map</h3>
+        <p>Open an existing Git repository in RelayForge. AI reads the code first and drafts the product map: which modules exist and which features sit under each. Everything it drafted is marked “to confirm” until you&#39;ve looked it over.</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-map.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-map.jpg" width="1520" height="624" alt="The product map: modules and features by layer, with AI-drafted items marked to confirm" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
     
-    <li><span class="num">03</span><h3>Accept and merge</h3><p>Run the app inside RelayForge and try each item yourself. The change merges into main only when you confirm.</p></li>
     
-    <li><span class="num">04</span><h3>Update the map, start the next round</h3><p>Accepted changes go into the product map. The next requirement starts from the latest main, with the old tests still on guard.</p></li>
+    <li class="walk-step walk-tall">
+      <div class="walk-text">
+        <span class="num">02</span>
+        <h3>New requirement: scope it before any code</h3>
+        <p>Say what you want in a sentence. The scoping session talks but never edits code: one question at a time, it writes the spec, the features it touches and the acceptance checks into the requirement, with mockups when needed. Work starts only after you approve the scope.</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-scope.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-scope.jpg" width="244" height="620" alt="A requirement being scoped: its stage, spec, affected features and acceptance checks" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-tall">
+      <div class="walk-text">
+        <span class="num">03</span>
+        <h3>Build: every step in view</h3>
+        <p>The requirement has its own branch and worktree, and Claude Code or Codex works embedded in the window as-is. Beside it: the plan, progress and changes of direction it records as it goes — no more digging through chat logs.</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-build.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-build.jpg" width="244" height="620" alt="A requirement in progress: plan 2/4 and the status of each step" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-wide">
+      <div class="walk-text">
+        <span class="num">04</span>
+        <h3>Test: a suite that grows, rerun in one click</h3>
+        <p>In the test stage, a test session writes test sets from your acceptance checks; anything AI added is tagged for you to review. The sets stay with the project, and one click on the Tests page reruns the whole suite after a change.</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-tests.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-tests.jpg" width="1124" height="812" alt="The test-set viewer: all 3 cases pass, each tagged as added by AI" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-wide">
+      <div class="walk-text">
+        <span class="num">05</span>
+        <h3>Bugs flow back: AI fixes, you confirm</h3>
+        <p>Problems found in testing or use become an issue that AI triages first. Click “Start fix”, pick Claude Code or Codex, and it fixes on its own branch. Before handing back it must add a regression case that reproduces the bug and get it passing; the report says what changed and how it was verified.</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-fix.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-fix.jpg" width="1128" height="688" alt="An issue logged by AI: its triage, the fix report, the regression case and “Confirm fixed”" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
+    
+    
+    <li class="walk-step walk-tall">
+      <div class="walk-text">
+        <span class="num">06</span>
+        <h3>Accept, merge, and the map follows</h3>
+        <p>Run the app inside RelayForge and mark each acceptance check “Pass” or “Not right”. Only when you confirm done does the change merge into main; the product map updates, and the next requirement picks up from there.</p>
+      </div>
+      <figure class="walk-shot">
+        <a href="/static/shots/step-accept.jpg" target="_blank" rel="noopener">
+          <img src="/static/shots/step-accept.jpg" width="244" height="620" alt="A requirement awaiting acceptance: checks marked one by one, passed items timestamped" loading="lazy" decoding="async">
+        </a>
+      </figure>
+    </li>
     
   </ol>
+  <p class="caption walk-note">Screenshots are from the FlowNote demo project that ships with the app; all sample data is fictional.</p>
 </section>
 
 <section class="band">
